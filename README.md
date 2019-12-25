@@ -1,2 +1,3 @@
-# Notes
-Personal Notes
+# cheatsheets
+
+My personal notes

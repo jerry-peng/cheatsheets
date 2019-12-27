@@ -1,6 +1,6 @@
-# vim cheatsheets
+# Vim Cheatsheets
 
-## modes
+## Modes
 
 | mode        | purpose
 | ---         | ---
@@ -9,9 +9,9 @@
 | visual mode | highlight portions of the file to manipulate at once
 | ex mode     | command mode
 
-## movements
+## Movements
 
-#### Note: commands with [count] can be repeated by prepending a number of count
+#### Note: commands with [count] can be prepended with a number of count to repeat the commands.
 
 | command         | action
 | ---             | ---
@@ -63,15 +63,65 @@
 | `;`             | go to next searched (f/F/t/T) character
 | `,`             | go to previous searched (f/F/t/T) character
 
-## edit text
+## Edit Text
 
-## text objects
+| command         | action
+| ---             | ---
+| `i`       | start insert mode at cursor
+| `I`       | insert at start of line
+| `a`       | append after the cursor
+| `A`       | append at the end of line
+| `o`       | open blank line below current line
+| `O`       | open blank line above current line
+| `Esc`     | exit insert mode
+|           |
+|           |
+| `r[char]` | replace a single char with specified char
+| `R`       | enter replace mode to replace a block of chars
 
 ## highlight text
 
+| command  | action
+| ---      | ---
+| `v`      | start visual mode, move cursor to highlight
+| `V`      | start linewise visual mode, move cursor to highlight
+| `Ctrl+v` | start visual block mode, move cursor to highlight
+| `Esc`    | exit visual mode
+| `O`      | move to corner of block
+| `o`      | move to other end of marked area
+
 ## copy/cut/paste
 
+| command       | action
+| ---           | ---
+| `y`           | yank (copy) marked text
+| `yy`          | yank current line
+| `y[movement]` | yank to move-to point
+| `d`           | delete marked text
+| `dd`          | delete current line
+| `d[movement]` | delete to move-to point
+| `c`           | delete marked text and go into insert mode
+| `cc`          | delete current line and go into insert mode
+| `c[movement]` | delete to move-to point and go into insert mode
+| `x`           | delete current char
+| `X`           | delete previous char
+| `p`           | put (paste) after cursor
+| `P`           | put (paste) before cursor
+
+
+## text objects
+
+| command         | action
+| ---             | ---
+
 ## exit
+
+| command | action
+| ---     | ---
+| `:w`    | write (save) file
+| `:wq`   | write (save) file and quit
+| `:q`    | quit (failes if changes present)
+| `:q!`   | quit without saving
 
 ## search/replace
 

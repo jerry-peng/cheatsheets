@@ -1,6 +1,6 @@
 # Vim Cheatsheets
 
-## Modes
+## modes
 
 | mode        | purpose
 | ---         | ---
@@ -9,7 +9,7 @@
 | visual mode | highlight portions of the file to manipulate at once
 | ex mode     | command mode
 
-## Movements
+## movements
 
 #### Note: commands with [count] can be prepended with a number of count to repeat the commands.
 
@@ -63,10 +63,10 @@
 | `;`             | go to next searched (f/F/t/T) character
 | `,`             | go to previous searched (f/F/t/T) character
 
-## Edit Text
+## editing
 
-| command         | action
-| ---             | ---
+| command   | action
+| ---       | ---
 | `i`       | start insert mode at cursor
 | `I`       | insert at start of line
 | `a`       | append after the cursor
@@ -78,19 +78,23 @@
 |           |
 | `r[char]` | replace a single char with specified char
 | `R`       | enter replace mode to replace a block of chars
+|           |
+|           |
+| `J`       | join line below to current line
 
-## highlight text
+## highlighting
 
 | command  | action
 | ---      | ---
 | `v`      | start visual mode, move cursor to highlight
 | `V`      | start linewise visual mode, move cursor to highlight
 | `Ctrl+v` | start visual block mode, move cursor to highlight
+| `gv`     | reselect
 | `Esc`    | exit visual mode
 | `O`      | move to corner of block
 | `o`      | move to other end of marked area
 
-## copy/cut/paste
+## copying/cutting/pasting
 
 | command       | action
 | ---           | ---
@@ -107,14 +111,11 @@
 | `X`           | delete previous char
 | `p`           | put (paste) after cursor
 | `P`           | put (paste) before cursor
+|               |
+|               |
+| `Ctrl+r 0`    | (insert mode) insert last yanked text
 
-
-## text objects
-
-| command         | action
-| ---             | ---
-
-## exit
+## exiting
 
 | command | action
 | ---     | ---
@@ -122,19 +123,83 @@
 | `:wq`   | write (save) file and quit
 | `:q`    | quit (failes if changes present)
 | `:q!`   | quit without saving
+| `:wqa`  | write (save) and quit all open tabs
+
+## text objects
+
+| command         | action
+| ---             | ---
 
 ## search/replace
 
+| command          | action
+| ---              | ---
+| `/pattern`       | search forward for pattern
+| `?pattern`       | search backward for pattern
+| `/pattern\c`     | search case-insensitive
+| `/pattern\C`     | search case-sensitive
+| `n`              | repeat search in same direction
+| `N`              | repeat search in opposite direction
+| `:%s/old/new/g`  | replace all old with new throughout file
+| `:%s/old/new/gc` | replace all old with new throughout file with confirmation (better to use `gn`)
+| `gn`             | jump to next search, can be used as a motion. Ex: `/search`, `cgn`, insert text, then use `.` to replace text one by one.
+| `gN`             | similar to `gn`, but jumps to previous search
+
 ## tabs/windows
 
-## registers
+| command       | action
+| ---           | ---
+| `:e filename` | open file
+| `:tabe`       | make a new tab
+| `gt`          | go to next tab
+| `gT`          | go to next tab
+|               |
+|               |
+| `vsp`         | vertically split windows
+| `sp`          | horizontally split windows
+| `Ctrl+w v`    | vertially split windows
+| `Ctrl+w s`    | horizontally split windows
+| `Ctrl+w w`    | switch between windows
+| `Ctrl+w q`    | quit a window
+|               |
+|               |
+| `Ctrl+w h`    | switch to left window
+| `Ctrl+w j`    | switch to down window
+| `Ctrl+w k`    | switch to up window
+| `Ctrl+w l`    | switch to right window
 
 ## marks
 
-## Credit
+| command   | action
+| ---       | ---
+| `m{a-z}`  | set mark {a-z} at cursor position
+| `m{A-Z}`  | set a global mark {A-Z} at cusor position, will work between files
+| `\`{a-z}` | move the cursor to the start of line where mark is set
+
+## jump list
+
+| command  | action
+| ---      | ---
+| `Ctrl+o` | go backward in jump list
+| `Ctrl+i` | go forward in jump list
+
+## change list
+
+| command | action
+| ---     | ---
+| `g;`    | go backward in change list
+| `g,`    | go forward in change list
+
+## registers
+
+## credits
 
 https://github.com/nicknisi/vim-workshop/blob/master/vim-workshop.pdf
 
 http://vimsheet.com
 
 http://vimsheet.com/advanced.html
+
+https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
+
+https://vim.fandom.com/wiki/Using_marks

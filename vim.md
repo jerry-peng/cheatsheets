@@ -9,35 +9,35 @@
 | visual mode | highlight portions of the file to manipulate at once
 | ex mode     | command mode
 
-## movements
+## motions
 
-#### Note: commands with [count] can be prepended with a number of count to repeat the commands.
+#### Note: most motions can be repeated a number of times by prepending the number before the motions.
 
 | command         | action
 | ---             | ---
-| `h`             | [count] move cursor left
-| `j`             | [count] move cursor down
-| `k`             | [count] move cursor up
-| `l`             | [count] move cursor right
+| `h`             | move cursor left
+| `j`             | move cursor down
+| `k`             | move cursor up
+| `l`             | move cursor right
 |                 |
 |                 |
-| `w`             | [count] to next start of words/punctuations
-| `W`             | [count] to next start of words
-| `e`             | [count] to next end of words/punctuations
-| `E`             | [count] to next start of words
-| `b`             | [count] to previous start of words/punctuations
-| `B`             | [count] to previous start of words
-| `$`             | [count] to end of line
+| `w`             | to next start of words/punctuations
+| `W`             | to next start of words
+| `e`             | to next end of words/punctuations
+| `E`             | to next start of words
+| `b`             | to previous start of words/punctuations
+| `B`             | to previous start of words
+| `$`             | to end of line
 | `0`             | to start of line
 | `^`             | to first non-blank character of line
 |                 |
 |                 |
-| `Ctrl+b`        | [count] scroll down a page
-| `Ctrl+f`        | [count] scroll up a page
+| `Ctrl+b`        | scroll down a page
+| `Ctrl+f`        | scroll up a page
 | `Ctrl+d`        | scroll down half a page
 | `Ctrl+u`        | scroll up half a page
-| `Ctrl+e`        | [count] scroll down
-| `Ctrl+y`        | [count] scroll up
+| `Ctrl+e`        | scroll down
+| `Ctrl+y`        | scroll up
 |                 |
 |                 |
 | `H`             | to top of window
@@ -50,10 +50,10 @@
 | `:[num]<enter>` | to specified line number
 |                 |
 |                 |
-| `(`             | [count] to previous sentence
-| `)`             | [count] to next sentence
-| `{`             | [count] to previous paragraph
-| `}`             | [count] to next paragraph
+| `(`             | to previous sentence
+| `)`             | to next sentence
+| `{`             | to previous paragraph
+| `}`             | to next paragraph
 |                 |
 |                 |
 | `f[char]`       | move to next char on the current line
@@ -126,6 +126,8 @@
 | `:wqa`  | write (save) and quit all open tabs
 
 ## text objects
+
+##### Structure of editing commands: `<number><command><text object or motion>`
 
 | command         | action
 | ---             | ---

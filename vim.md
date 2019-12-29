@@ -128,9 +128,45 @@
 ## text objects
 
 ##### Structure of editing commands: `<number><command><text object or motion>`
+##### a[object] includes surrounding white space of the object
+##### i[object] does not include surrounding white space of the object
 
-| command         | action
-| ---             | ---
+| command      | action
+| ---          | ---
+| `aw`         | a word
+| `iw`         | inner word
+| `as`         | a sentence (ends with a period)
+| `is`         | inner sentence (ends with a period)
+| `ap`         | a paragraph (ends with a blank line)
+| `ip`         | inner paragraph (ends with a blank line)
+| `a"`         | a double quoted string
+| `i"`         | inner double quoted string
+| `a'`         | a single quoted string
+| `i'`         | inner single quoted string
+| ``a` ``      | a back quoted string
+| ``i` ``      | inner back quoted string
+| `at`         | a single tag
+| `it`         | inner single tag
+|              |
+|              |
+| `a(` or `a)` | a parenthesized block
+| `i(` or `i)` | inner parenthesized block
+| `a[` or `a]` | a bracketed block
+| `i[` or `i]` | inner bracketed block
+| `a{` or `a}` | a brace block
+| `i{` or `i}` | inner brace block
+| `a<` or `a>` | a tag block
+| `i<` or `i>` | inner tig block
+
+| command      | action                                       | plugin
+| ---          | ---                                          | ---
+| `i<leader>w` | inner camel-cased word                       | bkad/CamelCaseMotion
+| `aa`         | a function argument                          | vim-scripts/argtextobj.vim
+| `ia`         | inner function argument                      | vim-scripts/argtextobj.vim
+| `ai`         | the current indentation level and line above | michaeljsmith/vim-indent-object
+| `ii`         | the current indentation level                | michaeljsmith/vim-indent-object
+
+<money></money>
 
 ## search/replace
 

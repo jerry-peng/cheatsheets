@@ -208,11 +208,39 @@
 
 ## marks
 
-| command   | action
-| ---       | ---
-| `m{a-z}`  | set mark {a-z} at cursor position
-| `m{A-Z}`  | set a global mark {A-Z} at cusor position, will work between files
-| `\`{a-z}` | move the cursor to the start of line where mark is set
+| command          | action
+| ---              | ---
+| `m{a-z}`         | set mark {a-z} at cursor position
+| `m{A-Z}`         | set a global mark {A-Z} at cusor position, will work between files
+| `\`{a-z}`        | move the cursor to the start of line where mark is set
+| `:marks`         | list all the current marks
+| `:marks aB`      | list marks a, B
+|                  |
+|                  |
+| `]'`             | jump to next line with a lowercase mark
+| `['`             | jump to previous line with a lowercase mark
+| ``]` ``          | jump to next lowercase mark
+| ``[` ``          | jump to previous lowercase mark
+|                  |
+|                  |
+| `:delmarks a`    | delete mark a
+| `:delmarks a-d`  | delete mark a, b, c, d
+| `:delmarks abxy` | delete mark a, b, x, y
+| `:delmarks aA`   | delete mark a, A
+| `:delmarks!`     | delete all lowercase marks for the current buffer (a-z)
+
+## special marks
+
+| command              | action
+| ---                  | ---
+| `` `. ``             | jump to position where last change occurred in current buffer
+| `` `" ``             | jump to position where last exited current buffer
+| `` `0 ``             | jump to position in last file edited (when exited Vim)
+| `` `1 ``             | like `0 but the previous file (also `2 etc)
+| `''`                 | jump back (to line in current buffer where jumped from)
+| `` `` ``             | jump back (to position in current buffer where jumped from)
+| `` `[ `` or `` `] `` | jump to beginning/end of previously changed or yanked text
+| `` `< `` or `` `> `` | jump to beginning/end of last visual selection
 
 ## jump list
 

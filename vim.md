@@ -1,4 +1,4 @@
-# Vim Cheatsheets
+# Vim Cheatsheet
 
 ## modes
 

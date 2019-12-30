@@ -282,14 +282,14 @@
 
 ## credits
 
-https://github.com/nicknisi/vim-workshop/blob/master/vim-workshop.pdf
+[A Great Vim Cheat Sheet](http://vimsheet.com)
 
-http://vimsheet.com
+[Advanced Vim Cheat Sheet](http://vimsheet.com/advanced.html)
 
-http://vimsheet.com/advanced.html
+[Vim Text Objects: The Dfinitive Guide](https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/)
 
-https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
+[nicknisi/vim-workshop](https://github.com/nicknisi/vim-workshop/blob/master/vim-workshop.pdf)
 
-https://vim.fandom.com/wiki/Using_marks
+[Vim Tips Wiki: Using marks](https://vim.fandom.com/wiki/Using_marks)
 
-https://www.brianstorti.com/vim-registers/
+[Vim registers: The basics and beyond](https://www.brianstorti.com/vim-registers/)

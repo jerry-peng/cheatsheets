@@ -183,6 +183,12 @@
 | `gn`             | jump to next search, can be used as a motion. Ex: `/search`, `cgn`, insert text, then use `.` to replace text one by one.
 | `gN`             | similar to `gn`, but jumps to previous search
 
+## command
+
+| command | action
+| ---     |
+| `q:`    | display command window
+
 ## tabs/windows
 
 | command       | action
@@ -233,10 +239,9 @@
 
 | command              | action
 | ---                  | ---
-| `` `. ``             | jump to position where last change occurred in current buffer
+| `` `. `` or `'.`     | jump to position where last change occurred in current buffer
 | `` `" ``             | jump to position where last exited current buffer
-| `` `0 ``             | jump to position in last file edited (when exited Vim)
-| `` `1 ``             | like `0 but the previous file (also `2 etc)
+| `` `[num] ``         | jump to position in previous n-th file edited (when exited Vim)
 | `''`                 | jump back (to line in current buffer where jumped from)
 | `` `` ``             | jump back (to position in current buffer where jumped from)
 | `` `[ `` or `` `] `` | jump to beginning/end of previously changed or yanked text
@@ -248,15 +253,32 @@
 | ---      | ---
 | `Ctrl+o` | go backward in jump list
 | `Ctrl+i` | go forward in jump list
+| `:jumps` | display jump list
 
 ## change list
 
-| command | action
-| ---     | ---
-| `g;`    | go backward in change list
-| `g,`    | go forward in change list
+| command    | action
+| ---        | ---
+| `g;`       | go backward in change list
+| `g,`       | go forward in change list
+| `:changes` | display change list
 
 ## registers
+
+| command    | action
+| ---        | ---
+| `:reg` | display registers
+| `:reg a b c` | display a, b, c registers
+| `"ry"` | yank to register r
+| `"rp"` | paste from register r
+| `Ctrl+r r` | in insert/command mode, paste from register r
+||
+||
+|`".` | last inserted text
+|`"%` | current file path
+|`":` | most recently executed command
+| `"=` | expression register
+| `Ctrl+r =`| open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
 
 ## credits
 
@@ -269,3 +291,5 @@ http://vimsheet.com/advanced.html
 https://blog.carbonfive.com/2011/10/17/vim-text-objects-the-definitive-guide/
 
 https://vim.fandom.com/wiki/Using_marks
+
+https://www.brianstorti.com/vim-registers/

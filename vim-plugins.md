@@ -23,10 +23,14 @@ Full path fuzzy *file*, *buffer*, *mru*, *tag*, ... finder for Vim.
 
 ### CamelCaseMotion
 
-This plugins defines motions similar to `w`, `b`, `e`, `ge` that moves camel-wise in a camel-cased word.
+This plugin defines motions similar to `w`, `b`, `e`, `ge` that moves camel-wise in a camel-cased word.
 
 ### delimitmate
 
 This plugin provides automatic closing of quotes, parenthesis, brackets, etc.
+
+### Emmet-vim
+
+This plugin provides support for expanding abbrevitions.
 
 ### VimCompletesMe

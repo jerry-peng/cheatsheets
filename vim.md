@@ -23,10 +23,12 @@
 |                 |
 | `w`             | to next start of words/punctuations
 | `W`             | to next start of words
-| `e`             | to next end of words/punctuations
-| `E`             | to next start of words
 | `b`             | to previous start of words/punctuations
 | `B`             | to previous start of words
+| `e`             | to next end of words/punctuations
+| `E`             | to next end of words
+| `ge`            | to previous end of words/punctuations
+| `gE`            | to previous end of words
 | `$`             | to end of line
 | `0`             | to start of line
 | `^`             | to first non-blank character of line

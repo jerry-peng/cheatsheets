@@ -280,7 +280,7 @@
 | `"=` | expression register
 | `Ctrl+r =`| open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
 
-## credits
+## resources
 
 [A Great Vim Cheat Sheet](http://vimsheet.com)
 

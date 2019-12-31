@@ -267,20 +267,20 @@
 
 ## registers
 
-| command    | action
-| ---        | ---
-| `:reg` | display registers
+| command      | action
+| ---          | ---
+| `:reg`       | display registers
 | `:reg a b c` | display a, b, c registers
-| `"ry"` | yank to register r
-| `"rp"` | paste from register r
-| `Ctrl+r r` | in insert/command mode, paste from register r
-||
-||
-|`".` | last inserted text
-|`"%` | current file path
-|`":` | most recently executed command
-| `"=` | expression register
-| `Ctrl+r =`| open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
+| `"ry"`       | yank to register r
+| `"rp"`       | paste from register r
+| `Ctrl+r r`   | in insert/command mode, paste from register r
+|              |
+|              |
+| `".`         | last inserted text
+| `"%`         | current file path
+| `":`         | most recently executed command
+| `"=`         | expression register
+| `Ctrl+r =`   | open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
 
 ## resources
 

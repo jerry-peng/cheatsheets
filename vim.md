@@ -1,5 +1,23 @@
 # Vim Cheatsheet
 
+## Table of Contents
+* [modes](#modes)
+* [motions](#motions)
+* [editing](#editing)
+* [highlighting](#highlighting)
+* [copying/cutting/pasting](#copyingcuttingpasting)
+* [exiting](#exiting)
+* [text objects](#text-objects)
+* [search/replace](#searchreplace)
+* [command](#command)
+* [tabs/windows](#tabswindows)
+* [marks](#marks)
+* [special marks](#special-marks)
+* [jump list](#jump-list)
+* [change list](#change-list)
+* [registers](#registers)
+* [resources](#resources)
+
 ## modes
 
 | mode        | purpose

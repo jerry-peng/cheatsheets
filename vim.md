@@ -52,12 +52,12 @@
 | `^`             | to first non-blank character of line
 |                 |
 |                 |
-| `Ctrl+b`        | scroll down a page
-| `Ctrl+f`        | scroll up a page
-| `Ctrl+d`        | scroll down half a page
-| `Ctrl+u`        | scroll up half a page
-| `Ctrl+e`        | scroll down
-| `Ctrl+y`        | scroll up
+| `<C-b>`        | scroll down a page
+| `<C-f>`        | scroll up a page
+| `<C-d>`        | scroll down half a page
+| `<C-u>`        | scroll up half a page
+| `<C-e>`        | scroll down
+| `<C-y>`        | scroll up
 |                 |
 |                 |
 | `H`             | to top of window
@@ -108,7 +108,7 @@
 | ---      | ---
 | `v`      | start visual mode, move cursor to highlight
 | `V`      | start linewise visual mode, move cursor to highlight
-| `Ctrl+v` | start visual block mode, move cursor to highlight
+| `<C-v>` | start visual block mode, move cursor to highlight
 | `gv`     | reselect
 | `Esc`    | exit visual mode
 | `O`      | move to corner of block
@@ -133,7 +133,7 @@
 | `P`           | put (paste) before cursor
 |               |
 |               |
-| `Ctrl+r 0`    | (insert mode) insert last yanked text
+| `<C-r> 0`    | (insert mode) insert last yanked text
 
 ## exiting
 
@@ -221,16 +221,16 @@
 |               |
 | `vsp`         | vertically split windows
 | `sp`          | horizontally split windows
-| `Ctrl+w v`    | vertially split windows
-| `Ctrl+w s`    | horizontally split windows
-| `Ctrl+w w`    | switch between windows
-| `Ctrl+w q`    | quit a window
+| `<C-w> v`    | vertially split windows
+| `<C-w> s`    | horizontally split windows
+| `<C-w> w`    | switch between windows
+| `<C-w> q`    | quit a window
 |               |
 |               |
-| `Ctrl+w h`    | switch to left window
-| `Ctrl+w j`    | switch to down window
-| `Ctrl+w k`    | switch to up window
-| `Ctrl+w l`    | switch to right window
+| `<C-w> h`    | switch to left window
+| `<C-w> j`    | switch to down window
+| `<C-w> k`    | switch to up window
+| `<C-w> l`    | switch to right window
 
 ## marks
 
@@ -271,8 +271,8 @@
 
 | command  | action
 | ---      | ---
-| `Ctrl+o` | go backward in jump list
-| `Ctrl+i` | go forward in jump list
+| `<C-o>` | go backward in jump list
+| `<C-i>` | go forward in jump list
 | `:jumps` | display jump list
 
 ## change list
@@ -291,14 +291,14 @@
 | `:reg a b c` | display a, b, c registers
 | `"ry"`       | yank to register r
 | `"rp"`       | paste from register r
-| `Ctrl+r r`   | in insert/command mode, paste from register r
+| `<C-r> r`   | in insert/command mode, paste from register r
 |              |
 |              |
 | `".`         | last inserted text
 | `"%`         | current file path
 | `":`         | most recently executed command
 | `"=`         | expression register
-| `Ctrl+r =`   | open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
+| `<C-r> =`   | open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
 
 ## resources
 

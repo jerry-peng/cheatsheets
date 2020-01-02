@@ -203,12 +203,6 @@
 | `gn`             | jump to next search, can be used as a motion. Ex: `/search`, `cgn`, insert text, then use `.` to replace text one by one.
 | `gN`             | similar to `gn`, but jumps to previous search
 
-## command
-
-| command | action
-| ---     |
-| `q:`    | display command window
-
 ## tabs/windows
 
 | command       | action
@@ -299,6 +293,13 @@
 | `":`         | most recently executed command
 | `"=`         | expression register
 | `<C-r> =`   | open expression prompt. Ex: type 2+2 <enter>, a 4 will be printed
+
+## misc commands
+
+| command     | action
+| ---         |
+| `q:`        | display command window
+| `:source %` | source vimrc file
 
 ## resources
 

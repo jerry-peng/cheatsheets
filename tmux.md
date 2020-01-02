@@ -1,6 +1,6 @@
 ## Tmux Cheatsheet
 
-### Sessions
+### sessions
 
 | command                       | action
 | ---                           | ---
@@ -13,7 +13,7 @@
 | `tmux kill-server`            | kill all tmux open sessions and server
 | `<C-b> d`                     | detach session
 
-### Windows
+### windows
 
 | command | action
 | ---|---
@@ -25,7 +25,7 @@
 | `<C-b> ,` | name window
 | `<C-b> &` | kill window
 
-### Panes
+### panes
 
 | command        | action
 | ---            | ---
@@ -40,7 +40,7 @@
 | `<C-b>}`       | move current pane right
 | `<C-b><space>` | toggle between layouts
 
-### Misc
+### misc
 
 | command   | action
 | ---       | ---
@@ -48,3 +48,11 @@
 | `<C-b> ?` | list shortcuts
 | `<C-b> :` | prompt
 | `<C-b> [` | enter copy mode
+
+### prompt
+
+type `<C-b> :` to enter prompt mode
+
+| command                  | action
+| ---                      | ---
+| `:swap-window -s 3 -t 1` | swap window number 3 with window number 1

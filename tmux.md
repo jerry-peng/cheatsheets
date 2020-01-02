@@ -56,3 +56,9 @@ type `<C-b> :` to enter prompt mode
 | command                  | action
 | ---                      | ---
 | `:swap-window -s 3 -t 1` | swap window number 3 with window number 1
+
+### credit
+
+[How do I reorder tmux windows](https://superuser.com/questions/343572/how-do-i-reorder-tmux-windows)
+
+[tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)

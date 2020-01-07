@@ -104,15 +104,17 @@
 
 ## highlighting
 
-| command  | action
-| ---      | ---
-| `v`      | start visual mode, move cursor to highlight
-| `V`      | start linewise visual mode, move cursor to highlight
-| `<C-v>` | start visual block mode, move cursor to highlight
-| `gv`     | reselect
-| `Esc`    | exit visual mode
-| `O`      | move to corner of block
-| `o`      | move to other end of marked area
+| command          | action
+| ---              | ---
+| `v`              | start visual mode, move cursor to highlight
+| `V`              | start linewise visual mode, move cursor to highlight
+| `<C-v>`          | start visual block mode, move cursor to highlight
+| `v[motion]`      | start visual mode, highlight according to motion
+| `v[text object]` | start visual mode, highlight according to text object
+| `gv`             | reselect
+| `Esc`            | exit visual mode
+| `O`              | move to corner of block
+| `o`              | move to other end of marked area
 
 ## copying/cutting/pasting
 
@@ -300,6 +302,7 @@
 | ---         |
 | `q:`        | display command window
 | `:source %` | source vimrc file
+| `:g/[pattern]/[command]` | apply ex command to every line where the regex pattern matches.
 
 ## resources
 
